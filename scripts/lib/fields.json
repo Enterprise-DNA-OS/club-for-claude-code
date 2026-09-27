@@ -1,0 +1,152 @@
+{
+  "levels": [
+    "name",
+    "annual_fee",
+    "currency",
+    "training_hours"
+  ],
+  "members": [
+    "name",
+    "email",
+    "organisation",
+    "external_id",
+    "level_id",
+    "status",
+    "joined_on",
+    "renewal_due",
+    "consent_on",
+    "consent_ref",
+    "marketing_consent",
+    "last_contact_on",
+    "source_data"
+  ],
+  "events": [
+    "name",
+    "starts_on",
+    "capacity",
+    "fee",
+    "currency",
+    "status",
+    "venue"
+  ],
+  "invoices": [
+    "name",
+    "member_id",
+    "amount",
+    "currency",
+    "due_on",
+    "kind",
+    "void"
+  ],
+  "donations": [
+    "name",
+    "member_id",
+    "amount",
+    "currency",
+    "received_on",
+    "purpose",
+    "reference"
+  ],
+  "training": [
+    "name",
+    "member_id",
+    "completed_on",
+    "hours",
+    "evidence_ref"
+  ],
+  "officers": [
+    "name",
+    "member_id",
+    "role",
+    "appointed_on",
+    "ends_on",
+    "consent_ref",
+    "eligibility_ref"
+  ],
+  "obligations": [
+    "name",
+    "jurisdiction",
+    "due_on",
+    "source_url",
+    "evidence_ref",
+    "completed_on",
+    "notice_days",
+    "notice_sent_on"
+  ],
+  "teams": [
+    "name",
+    "season",
+    "coach_id"
+  ],
+  "team_members": [
+    "name",
+    "team_id",
+    "member_id",
+    "role"
+  ],
+  "duties": [
+    "name",
+    "event_id",
+    "due_on",
+    "member_id",
+    "status"
+  ],
+  "meetings": [
+    "name",
+    "held_on",
+    "kind",
+    "agenda",
+    "minutes_ref",
+    "notice_sent_on",
+    "notice_days",
+    "status"
+  ],
+  "tasks": [
+    "name",
+    "meeting_id",
+    "member_id",
+    "due_on",
+    "status",
+    "note"
+  ],
+  "interests": [
+    "name",
+    "officer_id",
+    "disclosed_on",
+    "matter",
+    "management"
+  ],
+  "expenses": [
+    "name",
+    "amount",
+    "currency",
+    "paid_on",
+    "category",
+    "evidence_ref",
+    "reference"
+  ],
+  "files": [
+    "name",
+    "kind",
+    "location",
+    "review_on"
+  ],
+  "products": [
+    "name",
+    "stock",
+    "unit_price",
+    "currency"
+  ],
+  "orders": [
+    "name",
+    "member_id",
+    "product_id",
+    "quantity",
+    "due_on",
+    "status"
+  ],
+  "club_profile": [
+    "name",
+    "jurisdiction"
+  ]
+}

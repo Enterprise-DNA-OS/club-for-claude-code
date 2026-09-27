@@ -1,13 +1,45 @@
 [
   {
-    "name": "week",
-    "title": "This week",
-    "subtitle": "Club for Claude Code: what needs attention, rendered by npm run view",
+    "name": "club-week",
+    "title": "Club week",
     "sections": [
       {
-        "title": "Needs attention",
-        "note": "TODO(author): point this at the industry's attention view (overdue, stuck, quiet).",
-        "sql": "select 'replace me' as item, 'TODO(author)' as why"
+        "title": "Renewals in the next 60 days",
+        "sql": "select name,status,renewal_due,unpaid_invoices from member_health where status in ('active','lapsed') and renewal_due<=current_date+60 order by renewal_due"
+      },
+      {
+        "title": "Events",
+        "sql": "select name,starts_on,capacity,booked,waiting from event_summary order by starts_on"
+      },
+      {
+        "title": "Arrears",
+        "sql": "select member,currency,balance,due_on from invoice_balances where not void and balance>0 and due_on<current_date order by due_on"
+      },
+      {
+        "title": "Volunteer cover",
+        "sql": "select name,event,due_on,volunteer,status from duty_roster where status<>'done' order by due_on"
+      },
+      {
+        "title": "Committee actions",
+        "sql": "select name,owner,due_on from committee_actions where status='open' order by due_on"
+      }
+    ]
+  },
+  {
+    "name": "committee-review",
+    "title": "Committee review",
+    "sections": [
+      {
+        "title": "Officer evidence",
+        "sql": "select name,role,ends_on,consent_ref,eligibility_ref from officers order by ends_on"
+      },
+      {
+        "title": "Governance dates",
+        "sql": "select name,jurisdiction,due_on,source_url,completed_on from obligations order by due_on"
+      },
+      {
+        "title": "Learning gaps",
+        "sql": "select name,training_hours,training_target from member_health where status='active' and training_hours<training_target order by name"
       }
     ]
   }

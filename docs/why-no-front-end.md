@@ -1,24 +1,11 @@
-# Why there is no front end
+# Why no front end
 
-TidyHQ is a database with a subscription. The tables underneath it are ordinary: a few entities, a few relationships, a handful of workflows you repeat every week. What you pay for is the layer on top that lets people who do not write SQL get at those tables. Screens, filters, dashboards, forms.
+The free version is a club administrator's database, operated through a coding agent or the CLI. It answers renewal, duty and committee questions, records work and prepares documents. Claude Code, Codex, OpenCode and Cursor share the same commands.
 
-That layer used to be the whole product, because talking to a database was hard. It is not hard any more. Open this folder in Claude Code, describe what you want, and it writes the query, runs it, and explains the answer. Ask a question the dashboard never had a chart for and you still get an answer.
+A screen gives members something this base does not: self-service joining, online payments, a mobile event check-in flow and drag-and-drop scheduling. There is no offline synchronisation, hosted website, email delivery or public shop. Read-only HTML files are snapshots, not live applications. The shop records track stock and fulfilment, not checkout or card processing.
 
-## What you gain
+Enterprise DNA can build those interfaces and connections into a custom version. Discuss your actual club rituals first. TidyHQ already offers unlimited members and administrators; this project does not claim per-seat savings. It gives the club ownership and editable rules. Agent usage, hosting, backups and support have separate costs.
 
-- **Better answers.** A dashboard shows what the vendor decided to chart. Here you ask your own question, in your own words, and get it answered against your own data.
-- **No seats.** Everyone who needs to look can look. The bill does not grow with headcount.
-- **Your data in your Postgres.** Plain tables. Back them up, query them from anything, leave any time. There is no export step because there is nothing to leave.
-- **A process that matches you.** When your way of working changes, you add a command. You do not wait for a feature request to clear.
+Local PGlite supports one process at a time. Postgres supports shared access, but the base has no application sign-in or member permissions. Configure database access, host security, backups and retention before storing member data, particularly children's records. Do not expose generated pages publicly.
 
-## What you give up
-
-- **A visual board.** Stages are a table you ask about, not cards you drag.
-- **A phone app.** It runs where Claude Code runs.
-- **A vendor help desk.** This is open source. Enterprise DNA supports the installed version for businesses that want someone to call.
-
-## Who this fits
-
-Small teams who already use Claude Code, or who would rather learn to ask than learn another interface. If your team needs a screen to look at all day, keep TidyHQ. If you need the answers more than the screens, this is cheaper, faster and yours.
-
-Installed and run for you: https://enterprisedna.co/omni/instead-of/tidyhq
+[Omni by Enterprise DNA](https://enterprisedna.co/omni/book/?offer=replace-software&utm_campaign=tidyhq&utm_medium=github) installs, customises and runs your version.

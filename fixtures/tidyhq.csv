@@ -1,0 +1,4 @@
+Contact ID,First Name,Last Name,Email,Membership Level,Membership Status,Subscription Start Date,Subscription End Date,Notes
+101,Hana,Rangi,hana@example.org,Playing,Active,2025-01-01,2027-01-01,"Imported demo contact"
+102,Wiremu,King,wiremu@example.org,Social,Expired,2024-01-01,2025-01-01,"First note
+Second note"
